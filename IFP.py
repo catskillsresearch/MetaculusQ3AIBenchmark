@@ -1,87 +1,30 @@
-import re, requests, json, datetime
-from config import config
+import json
+from datetime import datetime
+from metaculus import post_question_prediction, post_question_comment, get_question_details
 
-AUTH_HEADERS = {"headers": {"Authorization": f"Token {config.METACULUS_TOKEN}"}}
-API_BASE_URL = "https://www.metaculus.com/api2"
-WARMUP_TOURNAMENT_ID = 3349
-SUBMIT_PREDICTION = True
+def row_exists(row_id):
+    conn = sqlite3.connect('q3ai.db')
+    cursor = conn.cursor()
+    cursor.execute(f"SELECT 1 FROM ifp WHERE id = ?", (row_id,))
+    result = cursor.fetchone()
+    conn.close()
+    return result is not None
 
-def find_number_before_percent(s):
-    # Use a regular expression to find all numbers followed by a '%'
-    matches = re.findall(r'(\d+)%', s)
-    if matches:
-        # Return the last number found before a '%'
-        return int(matches[-1])
-    else:
-        # Return None if no number found
-        return None
-
-def post_question_comment(question_id, comment_text):
-    """
-    Post a comment on the question page as the bot user.
-    """
-
-    response = requests.post(
-        f"{API_BASE_URL}/comments/",
-        json={
-            "comment_text": comment_text,
-            "submit_type": "N",
-            "include_latest_prediction": True,
-            "question": question_id,
-        },
-        **AUTH_HEADERS,
-    )
-    response.raise_for_status()
-    print("Comment posted for ", question_id)
-
-def post_question_prediction(question_id, prediction_percentage):
-    """
-    Post a prediction value (between 1 and 100) on the question.
-    """
-    url = f"{API_BASE_URL}/questions/{question_id}/predict/"
-    response = requests.post(
-        url,
-        json={"prediction": float(prediction_percentage) / 100},
-        **AUTH_HEADERS,
-    )
-    response.raise_for_status()
-    print("Prediction posted for ", question_id)
-
-
-def get_question_details(question_id):
-    """
-    Get all details about a specific question.
-    """
-    url = f"{API_BASE_URL}/questions/{question_id}/"
-    response = requests.get(
-        url,
-        **AUTH_HEADERS,
-    )
-    response.raise_for_status()
-    return json.loads(response.content)
-
-def list_questions(tournament_id=WARMUP_TOURNAMENT_ID, offset=0, count=1000):
-    """
-    List (all details) {count} questions from the {tournament_id}
-    """
-    url_qparams = {
-        "limit": count,
-        "offset": offset,
-        "has_group": "false",
-        "order_by": "-activity",
-        "forecast_type": "binary",
-        "project": tournament_id,
-        "status": "open",
-        "type": "forecast",
-        "include_description": "true",
-    }
-    url = f"{API_BASE_URL}/questions/"
-    response = requests.get(url, **AUTH_HEADERS, params=url_qparams)
-    response.raise_for_status()
-    data = json.loads(response.content)
-    return data
-
-
+def update_resolved_field(database, new_value, row_id):
+    # Connect to the SQLite database
+    conn = sqlite3.connect(database)
+    cursor = conn.cursor()
+    
+    # Update the resolved field for the specified row
+    cursor.execute('''
+        UPDATE ifp
+        SET resolution = ?
+        WHERE id = ?
+    ''', (new_value, row_id))
+    
+    # Commit changes and close the connection
+    conn.commit()
+    conn.close()
 
 class IFP:
 
@@ -106,27 +49,35 @@ class IFP:
         sep = self.format()
         return len(sep.split(' ')) > self.openai_max_tokens # Max limit for OpenAI
 
-    def record(self):
-        return self.format()
-        if self.over_openai_max(): 
-            self.news = ' '.join(self.news.split(' ')[0:int(0.5*self.openai_max_tokens)])
-        if self.over_openai_max(): 
-            self.research = ' '.join(self.research.split(' ')[0:int(0.5*self.openai_max_tokens)])
-        if self.over_openai_max(): 
-            raise Exception('IFP record over OpenAI max')
-        return self.format()
-
-    def __init__(self, question_id):
-        self.question_id = question_id
+    def init_from_metaculus(self):
         self.question_details = get_question_details(self.question_id)
-        self.today = datetime.datetime.now().strftime("%Y-%m-%d")   
+        self.today = datetime.now().strftime("%Y-%m-%d")   
+        self.active_state = self.question_details["active_state"]
         self.title = self.question_details["title"]
         self.resolution_criteria = self.question_details["resolution_criteria"]
         self.background = self.question_details["description"]
         self.fine_print = self.question_details["fine_print"]
+        self.resolution = self.question_details["resolution"]
+
+    def init_from_db(self):
+        print('init_from_db')
+        conn = sqlite3.connect('q3ai.db')
+        cursor = conn.cursor()
+        cursor.execute("SELECT ask_date, id, title, active_state, resolution, background, fine_print, resolution_criteria, json FROM ifp WHERE id = ?", (self.question_id,))
+        (self.ask_date, self.question_id, self.title, self.active_state, \
+         self.resolved, self.background, self.fine_print, self.resolution_criteria, self.question_details) = cursor.fetchone()
+        conn.close()
+        self.question_details = json.loads(self.question_details)
+
+    def __init__(self, question_id):
+        self.question_id = question_id
         self.event = ''
         self.model_domain = ''
         self.feedback = ''
+        if row_exists(question_id):
+            self.init_from_db()
+        else:
+            self.init_from_metaculus()
 
     def report(self):
         rpt = f"""
@@ -142,8 +93,32 @@ The fine print is: [ {self.fine_print} ]"""
         post_question_prediction(self.question_id, self.forecast)
         post_question_comment(self.question_id, self.rationale)
 
+    def insert(self, ask_date):
+        rec = (ask_date, ifp.question_id, ifp.title, ifp.active_state, ifp.resolved,
+               ifp.background, ifp.fine_print, ifp.resolution_criteria, json.dumps(ifp.question_details))
+       
+        # Connect to the SQLite database
+        conn = sqlite3.connect('q3ai.db')  # Replace 'your_database.db' with your database name
+        cursor = conn.cursor()
+
+        # Insert a row into the ifp table
+        cursor.execute('''
+            INSERT INTO ifp (ask_date, id, title, active_state, resolved, background, fine_print, resolution_criteria, json)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ''', rec)
+        
+        # Commit changes and close the connection
+        conn.commit()
+        conn.close()
+
 if __name__=="__main__":
-    qid = 26775
-    ifp = IFP(qid)
-    ifps = {qid: ifp}
-    print(ifp.record())
+    from history import history
+
+    import sqlite3
+    from tqdm import tqdm
+    conn = sqlite3.connect('q3ai.db')
+    cursor = conn.cursor()       
+    for key in tqdm(history):
+        dt = datetime.strptime(key, '%d%b%y')
+        for qid in tqdm(history[key]):
+            ifp = IFP(qid)
