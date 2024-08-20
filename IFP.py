@@ -1,6 +1,6 @@
-import json
+import json, sqlite3
 from datetime import datetime
-from metaculus import post_question_prediction, post_question_comment, get_question_details
+from metaculus import post_question_prediction, post_question_comment, get_question_details, list_questions
 
 def row_exists(row_id):
     conn = sqlite3.connect('q3ai.db')
@@ -15,7 +15,7 @@ def update_resolved_field(database, new_value, row_id):
     conn = sqlite3.connect(database)
     cursor = conn.cursor()
     
-    # Update the resolved field for the specified row
+    # Update the resolution field for the specified row
     cursor.execute('''
         UPDATE ifp
         SET resolution = ?
@@ -65,7 +65,7 @@ class IFP:
         cursor = conn.cursor()
         cursor.execute("SELECT ask_date, id, title, active_state, resolution, background, fine_print, resolution_criteria, json FROM ifp WHERE id = ?", (self.question_id,))
         (self.ask_date, self.question_id, self.title, self.active_state, \
-         self.resolved, self.background, self.fine_print, self.resolution_criteria, self.question_details) = cursor.fetchone()
+         self.resolution, self.background, self.fine_print, self.resolution_criteria, self.question_details) = cursor.fetchone()
         conn.close()
         self.question_details = json.loads(self.question_details)
 
@@ -94,8 +94,8 @@ The fine print is: [ {self.fine_print} ]"""
         post_question_comment(self.question_id, self.rationale)
 
     def insert(self, ask_date):
-        rec = (ask_date, ifp.question_id, ifp.title, ifp.active_state, ifp.resolved,
-               ifp.background, ifp.fine_print, ifp.resolution_criteria, json.dumps(ifp.question_details))
+        rec = (ask_date, self.question_id, self.title, self.active_state, self.resolution,
+               self.background, self.fine_print, self.resolution_criteria, json.dumps(self.question_details))
        
         # Connect to the SQLite database
         conn = sqlite3.connect('q3ai.db')  # Replace 'your_database.db' with your database name
@@ -103,7 +103,7 @@ The fine print is: [ {self.fine_print} ]"""
 
         # Insert a row into the ifp table
         cursor.execute('''
-            INSERT INTO ifp (ask_date, id, title, active_state, resolved, background, fine_print, resolution_criteria, json)
+            INSERT INTO ifp (ask_date, id, title, active_state, resolution, background, fine_print, resolution_criteria, json)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', rec)
         
@@ -113,12 +113,18 @@ The fine print is: [ {self.fine_print} ]"""
 
 if __name__=="__main__":
     from history import history
-
     import sqlite3
     from tqdm import tqdm
-    conn = sqlite3.connect('q3ai.db')
-    cursor = conn.cursor()       
-    for key in tqdm(history):
-        dt = datetime.strptime(key, '%d%b%y')
-        for qid in tqdm(history[key]):
-            ifp = IFP(qid)
+    if 0:
+        conn = sqlite3.connect('q3ai.db')
+        cursor = conn.cursor()       
+        for key in tqdm(history):
+            dt = datetime.strptime(key, '%d%b%y')
+            for qid in tqdm(history[key]):
+                ifp = IFP(qid)
+    else:
+        ask_date = datetime.now()
+        ids = [x['id'] for x in list_questions()['results']]
+        print(ids)
+        for id in ids:
+            IFP(id).insert(ask_date)

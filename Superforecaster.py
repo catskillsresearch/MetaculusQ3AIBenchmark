@@ -19,7 +19,7 @@ and rationale is a revised assessment which may be adjusted from a prior assessm
         super().__init__(self.system_role, llm)
 
     def forecast(self, event, news, rates, group):
-        ifpstr = '\n'.join([ifp.record() for ifp in group])
+        ifpstr = '\n'.join([ifp.format() for ifp in group])
         prompt = f"GROUP|{event}\nNEWS|{news}\nRATES|{rates}\nQUESTIONS\n{ifpstr}"
         self.F0 = self.chat(prompt)
         self.F1 = [x.strip().replace('\n', '') for x in self.F0.split('^^^')]
