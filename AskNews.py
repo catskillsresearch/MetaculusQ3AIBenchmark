@@ -3,7 +3,7 @@
 
 from config import config
 from asknews_sdk import AskNewsSDK
-import json
+import json, datetime
 
 def save_news(ifp, news):
     fn = f'asknews_for_question/{ifp.question_id}.json'
@@ -20,8 +20,7 @@ class AskNews():
         self.ask = AskNewsSDK(
               client_id=config.ASKNEWS_CLIENT_ID,
               client_secret=config.ASKNEWS_SECRET,
-              scopes=["news"]
-          )
+              scopes=["news"])
 
         self.cache = {}
         
@@ -29,21 +28,31 @@ class AskNews():
               q, 
               method,    # use "nl" for natural language for your search, or "kw" for keyword, or 'both'
               strategy,
+              end_timestamp,
               return_type="dicts"): # strategy="latest news" enforces looking at the latest news only
                          # strategy="news knowledge" looks for relevant news within the past 60 days
-        return self.ask.news.search_news(
-            query=q, # your keyword query
-            n_articles=10, # control the number of articles to include in the context
-            return_type=return_type,  # you can also ask for "dicts" if you want more information
-            method=method, 
-            strategy=strategy).as_dicts # strategy="latest news" enforces looking at the latest news only,
+        if end_timestamp is not None:
+            return self.ask.news.search_news(
+                    query=q, # your keyword query
+                    n_articles=10, # control the number of articles to include in the context
+                    return_type=return_type,  # you can also ask for "dicts" if you want more information
+                    method=method, 
+                    end_timestamp = end_timestamp,
+                    strategy=strategy).as_dicts # strategy="latest news" enforces looking at the latest news only,
+        else:
+            return self.ask.news.search_news(
+                    query=q, # your keyword query
+                    n_articles=10, # control the number of articles to include in the context
+                    return_type=return_type,  # you can also ask for "dicts" if you want more information
+                    method=method, 
+                    strategy=strategy).as_dicts # strategy="latest news" enforces looking at the latest news only,   
 
-    def multi_strategy(self, q, return_type="dicts"):
+    def multi_strategy(self, q, end_timestamp, return_type="dicts"):
         all = []
         R = {}
         for strategy in ['latest news', 'news knowledge']:
             R[strategy] = []
-            for x in self.query(q, 'both', strategy):
+            for x in self.query(q, 'both', strategy, end_timestamp):
                 all.append(x.summary if return_type=="dicts" else x)
                 x = x.dict()
                 x['article_url'] = x['article_url'].unicode_string()
@@ -55,12 +64,15 @@ class AskNews():
         all = list(set(all))
         return '\n\n'.join(all), R
 
-    def research(self, group, return_type="dicts"):
+    def research(self, group, end_timestamp = None, return_type="dicts"):
+        if end_timestamp is None:
+            now = datetime.datetime.now().timestamp()
+            end_timestamp=int(now)       
         q = '\n'.join(ifp.title.strip() for ifp in group)
         try:
             return self.cache[q]
         except:
-            news, self.R = self.multi_strategy(q,return_type)
+            news, self.R = self.multi_strategy(q,end_timestamp,return_type)
             for ifp in group:
                 save_news(ifp, self.R)
             self.cache[q] = news

@@ -115,13 +115,17 @@ if __name__=="__main__":
     from history import history
     import sqlite3
     from tqdm import tqdm
-    if 0:
+    import time
+    if 1:
         conn = sqlite3.connect('q3ai.db')
         cursor = conn.cursor()       
         for key in tqdm(history):
-            dt = datetime.strptime(key, '%d%b%y')
+            ask_date = datetime.strptime(key, '%d%b%y')
             for qid in tqdm(history[key]):
+                aaa
                 ifp = IFP(qid)
+                ifp.insert(ask_date)
+            time.sleep(2)
     else:
         ask_date = datetime.now()
         ids = [x['id'] for x in list_questions()['results']]

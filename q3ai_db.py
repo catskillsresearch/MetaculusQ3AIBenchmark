@@ -23,4 +23,5 @@ def create_database_and_table():
     conn.commit()
     conn.close()
 
-create_database_and_table()
+if __name__=="__main__":
+    create_database_and_table()

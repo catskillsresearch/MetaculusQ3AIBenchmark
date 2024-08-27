@@ -32,7 +32,20 @@ history = { '08JUL24': [25876, 25877, 25875, 25873, 25871, 25878, 25874, 25872],
             '20AUG24': [27277, 27278, 27279, 27280, 27281, 27282, 27283],
             '21AUG24': [27446, 27521, 27522, 27523, 27524],
             '22AUG24': [27447, 27484, 27485, 27486, 27487, 27488, 27489, 27490, 27491, 27492, 27493, 27538, 27539],
-            '23AUG24': [27515, 27545, 27546, 27547, 27548, 27576, 27581, 27582, 27583, 27584]}
+            '23AUG24': [27515, 27545, 27546, 27547, 27548, 27576, 27581, 27582, 27583, 27584],
+            '26AUG24': [27602, 27603, 27604, 27605, 27606, 27607, 27608, 27609, 27610]}
 
 if __name__=="__main__":
-    pass
+    from metaculus import get_question_details
+    import os, json, datetime
+    from tqdm import tqdm
+    import time
+    os.makedirs('questions', exist_ok=True)
+    for key in tqdm(history):
+        for qid in tqdm(history[key]):
+            ifp = get_question_details(qid)
+            fn = f'questions/{qid}.json'
+            with open(fn, 'w') as f:
+                json.dump(ifp, f)
+                print('saved', fn)
+        time.sleep(2)
