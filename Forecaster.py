@@ -14,12 +14,11 @@ class Forecaster:
     
     def __init__(self, ifps):
         self.max_tries = 4
-        self.gpt = Claude
+        self.gpt = MetacGPT
         self.qr = QuestionRelator(self.gpt)
         self.ask = AskNews()
         self.mdc = ModelDomainClassifier(self.gpt)
         self.ifps = ifps
-
         
     def fit(self):
         print('MODEL DOMAIN')
@@ -33,14 +32,20 @@ class Forecaster:
             self.rho = self.qr.relate(self.ifps)
             
         print('NEWS')
-        self.news = {event: None for event in self.rho}
+        try:
+            self.news
+        except:
+            self.news = {event: None for event in self.rho}
         for event, group in self.rho.items():
             if self.news[event] is None:
                 print('ASKING')
                 self.news[event] = self.ask.research(group)    
 
         print('RATES')
-        self.rates = {event: None for event in self.rho}
+        try:
+            self.rates
+        except:
+            self.rates = {event: None for event in self.rho}
         for event, group in self.rho.items():
             if self.rates[event] is None:
                 self.ra = RateAnalyzer(self.gpt)
