@@ -31,11 +31,15 @@ Other
         super().__init__(self.system_role, llm)
 
     def classify(self, ifp):
-        prompt = f"|{ifp.question_id}|{ifp.title}|{ifp.resolution_criteria}|{ifp.background}|{ifp.fine_print}|"
-        self.R = self.chat(prompt)
-        ifp.model_domain = self.R
-        print(ifp.question_id, ifp.title)
-        print(self.R)
+        try:
+            return ifp.model_domain
+        except:
+            prompt = f"|{ifp.id}|{ifp.title}|{ifp.resolution_criteria}|{ifp.background}|{ifp.fine_print}|"
+            self.R = self.chat(prompt)
+            ifp.model_domain = self.R
+            print(ifp.id, ifp.title)
+            print(self.R)
+            return self.R
 
 if __name__=="__main__":
     from MetaAI import MetaAI

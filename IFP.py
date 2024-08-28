@@ -3,6 +3,7 @@ from datetime import datetime
 from metaculus import post_question_prediction, post_question_comment, get_question_details, list_questions
 
 def row_exists(row_id):
+    return False
     conn = sqlite3.connect('q3ai.db')
     cursor = conn.cursor()
     cursor.execute(f"SELECT 1 FROM ifp WHERE id = ?", (row_id,))
@@ -28,7 +29,7 @@ def update_resolved_field(database, new_value, row_id):
 
 class IFP:
 
-    forecast_fields = ['question_id',
+    forecast_fields = ['id',
                        'title',
                        'feedback',
                        'resolution_criteria', 
@@ -50,7 +51,7 @@ class IFP:
         return len(sep.split(' ')) > self.openai_max_tokens # Max limit for OpenAI
 
     def init_from_metaculus(self):
-        self.question_details = get_question_details(self.question_id)
+        self.question_details = get_question_details(self.id)
         self.today = datetime.now().strftime("%Y-%m-%d")   
         self.active_state = self.question_details["active_state"]
         self.title = self.question_details["title"]
@@ -63,18 +64,18 @@ class IFP:
         print('init_from_db')
         conn = sqlite3.connect('q3ai.db')
         cursor = conn.cursor()
-        cursor.execute("SELECT ask_date, id, title, active_state, resolution, background, fine_print, resolution_criteria, json FROM ifp WHERE id = ?", (self.question_id,))
-        (self.ask_date, self.question_id, self.title, self.active_state, \
+        cursor.execute("SELECT ask_date, id, title, active_state, resolution, background, fine_print, resolution_criteria, json FROM ifp WHERE id = ?", (self.id,))
+        (self.ask_date, self.id, self.title, self.active_state, \
          self.resolution, self.background, self.fine_print, self.resolution_criteria, self.question_details) = cursor.fetchone()
         conn.close()
         self.question_details = json.loads(self.question_details)
 
-    def __init__(self, question_id):
-        self.question_id = question_id
+    def __init__(self, id):
+        self.id = id
         self.event = ''
         self.model_domain = ''
         self.feedback = ''
-        if row_exists(question_id):
+        if row_exists(id):
             self.init_from_db()
         else:
             self.init_from_metaculus()
@@ -90,11 +91,11 @@ The fine print is: [ {self.fine_print} ]"""
         return rpt
 
     def upload(self):
-        post_question_prediction(self.question_id, self.forecast)
-        post_question_comment(self.question_id, self.rationale)
+        post_question_prediction(self.id, self.forecast)
+        post_question_comment(self.id, self.rationale)
 
     def insert(self, ask_date):
-        rec = (ask_date, self.question_id, self.title, self.active_state, self.resolution,
+        rec = (ask_date, self.id, self.title, self.active_state, self.resolution,
                self.background, self.fine_print, self.resolution_criteria, json.dumps(self.question_details))
        
         # Connect to the SQLite database

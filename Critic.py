@@ -13,13 +13,13 @@ You will reply with a line |id|feedback| where feedback is "I concur" if you see
 
     def feedback(self, ifp):
         self.fb = 'I prasldfkbeddy.'
-        prompt = f"|{ifp.event}|{ifp.question_id}|{ifp.title}|{ifp.forecast}|{ifp.rationale}|"
+        prompt = f"|{ifp.event}|{ifp.id}|{ifp.title}|{ifp.forecast}|{ifp.rationale}|"
         self.fb = self.chat(prompt)
         if '|' in self.fb: # LLM obeyed system role
             self.fb1 = self.fb.split('|')[2:]
             self.fb = ''.join([x.strip() for x in self.fb1 if x])
         ifp.feedback = self.fb 
-        print(ifp.question_id, ifp.feedback)
+        print(ifp.id, ifp.feedback)
 
 if __name__=="__main__":
     from MetaAI import MetaAI

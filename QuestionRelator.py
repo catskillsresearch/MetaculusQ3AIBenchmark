@@ -11,7 +11,7 @@ Please return as separate lines formatted as |event|id|title|, do not add any ot
         super().__init__(self.system_role, llm)
 
     def relate(self, ifps):
-        prompt = '\n'.join([f"{ifp.question_id}: {ifp.title}" for ifp in ifps.values()])
+        prompt = '\n'.join([f"{ifp.id}: {ifp.title}" for ifp in ifps.values()])
         KL = self.chat(prompt)
         print(KL)
         K1 = [x.split('|') for x in KL.split('\n')]

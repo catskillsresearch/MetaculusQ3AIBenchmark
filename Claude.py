@@ -22,4 +22,4 @@ class Claude(LLM):
 
 if __name__=="__main__":
     claude = Claude('Please help me.')
-    print(claude.chat(ifp.title))
+    print(claude.chat('Hello world'))

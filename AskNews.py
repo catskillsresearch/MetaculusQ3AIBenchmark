@@ -4,9 +4,10 @@
 from config import config
 from asknews_sdk import AskNewsSDK
 import json, datetime
+from IFP import IFP
 
 def save_news(ifp, news):
-    fn = f'asknews_for_question/{ifp.question_id}.json'
+    fn = f'asknews_for_question/{ifp.id}.json'
     with open(fn, 'w') as f:
         json.dump(news, f)
         print('saved', fn)
@@ -69,6 +70,7 @@ class AskNews():
             now = datetime.datetime.now().timestamp()
             end_timestamp=int(now)       
         q = '\n'.join(ifp.title.strip() for ifp in group)
+        print("Researching", q)
         try:
             return self.cache[q]
         except:

@@ -26,14 +26,14 @@ and rationale is a revised assessment which may be adjusted from a prior assessm
         self.F2 = [x.split('|') for x in self.F1] 
         self.F3 = [[x for x in y if x] for y in self.F2]
         self.F4 = [(int(id),int(forecast),rationale) for _, id, forecast, rationale in self.F3]
-        self.ifps = {ifp.question_id: ifp for ifp in group}
+        self.ifps = {ifp.id: ifp for ifp in group}
         for id, forecast, rationale in self.F4:
             self.ifps[id].forecast = forecast
             self.ifps[id].rationale = rationale
             print(id, forecast, rationale)
 
     def reassess(self, ifp):
-        prompt = f"|CRITIC|{ifp.question_id}|{ifp.feedback}|"
+        prompt = f"|CRITIC|{ifp.id}|{ifp.feedback}|"
         self.R0 = self.chat(prompt)
         id,fcst,rationale = [x for x in self.R0.strip().split('|') if x]
         id = int(id)

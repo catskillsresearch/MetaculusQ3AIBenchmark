@@ -1,0 +1,369 @@
+,model,id,title
+0,Market price,25871,"On July 17, 2024, will Nvidia's market capitalization be larger than Apple's?"
+1,Sports performance,25872,Will 4 or more goals be scored in the two semi-final games combined in the 2024 UEFA European Championship?
+2,Macroeconomics,25873,Will the Real-time Sahm Rule Recession Indicator increase Year-over-Year for Aug 2024?
+3,Sports performance,25874,Will the time gap between the first and second place finishers in the 2024 Tour de France be more than 3 minutes?
+4,Election outcome,25875,"Will Joe Biden announce before July 31, 2024 that he will not accept the Democratic Party's nomination for President?"
+5,Astronomy,25876,"Will exactly 2 Starship launches reach reach an altitude of 160 kilometers by Sept 30, 2024?"
+6,Astronomy,25877,"Will exactly 3 Starship launches reach reach an altitude of 160 kilometers by Sept 30, 2024?"
+7,Astronomy,25878,"Will exactly 2 or 3 Starship launches reach reach an altitude of 160 kilometers by Sept 30, 2024?"
+8,Market price,25933,"Will the  CBOE S&P 500 3-Month Volatility Index (VXVCLS)	
+ be higher Year-over-Year on July 20, 2024?"
+9,Geopolitics,25934,"Will US offer India a nuclear submarine before Sept 30, 2024?"
+10,AI performance,25935,"Will OpenAI publish information describing Q* (Q-Star) by Sept 30, 2024?"
+11,Military conflict,25936,"Will the Crimean Bridge be hit with an attack before Sept 30, 2024?"
+12,Leadership change,25952,"Will the Prime Minister of France belong to the New Popular Front coalition on July 30, 2024?"
+13,Leadership change,25953,"Will the Prime Minister of France belong to the Together coalition on July 30, 2024?"
+14,Leadership change,25954,"Will the Prime Minister of France belong to a coalition other than New Popular Front or Together on July 30, 2024?"
+15,Military conflict,25955,"Before October 1, 2024, will there be an armed forces death in a conflict opposing China to Taiwan, the United States, the Philippines, or Japan?"
+16,Election outcome,25956,Will Democrats have a brokered convention in 2024?
+17,Sports performance,25957,Will Tadej Pogačar win the Tour de France 2024?
+18,Sports performance,25958,Will Jonas Vingegaard win the Tour de France 2024?
+19,Sports performance,25959,Will someone other than Tadej Pogačar or Jonas Vingegaard win the Tour de France 2024?
+20,Epidemic,25960,"Will there be any reported human-to-human transmission of highly pathogenic avian influenza H5N1 globally before Sept 30, 2024?"
+21,Election outcome,26004,"Will Trump's lead over Biden be greater than 2 and less than or equal to 3 on July 15, 2024, according to 538's national polling average?"
+22,Election outcome,26005,"Will Trump's lead over Biden be greater than 3 and less than or equal to 4 on July 15, 2024, according to 538's national polling average?"
+23,Election outcome,26006,"Will Trump's lead over Biden be greater than 2 and less than or equal to 4 on July 15, 2024, according to 538's national polling average?"
+24,Astronomy,26017,"Will exactly 1 Starship launch reach an altitude of 160 kilometers between July 1, 2024 and Sept 30, 2024?"
+25,Astronomy,26018,"Will exactly 2 Starship launches reach an altitude of 160 kilometers between July 1, 2024 and Sept 30, 2024?"
+26,Astronomy,26019,"Will exactly 1 or 2 Starship launches reach an altitude of 160 kilometers between July 1, 2024 and Sept 30, 2024?"
+27,Macroeconomics,26020,"Will the Consumer Price Index for All Urban Consumers (CPI-U) exceed 316.000 for August 2024, according to FRED?"
+28,Sports performance,26021,"At the Paris Summer Olympics in 2024, will the men's 100m dash winning time break the Olympic record of 9.63s?"
+29,Geopolitics,26022,"Before Sept 30, 2024, will the International Criminal Court issue an arrest warrant for Yoav Gallant?"
+30,Geopolitics,26023,"Will diplomatic expulsions or recalls take place between the Philippines and China before September 30, 2024?"
+31,Sports performance,26024,Will Bo Nix be the starting quarterback for the Denver Broncos in their Week 4 game against the New York Jets?
+32,Sports performance,26095,Will Individual Neutral Athletes Win ≥15 Gold Medals at the Paris 2024 Olympics?
+33,Market price,26096,"On July 21, 2024, will the closing value of BSE SENSEX be greater than 75k and less than or equal to 76k?"
+34,Market price,26097,"On July 21, 2024, will the closing value of BSE SENSEX be greater than 76k and less than or equal to 77k?"
+35,Market price,26098,"On July 21, 2024, will the closing value of BSE SENSEX be greater than 75k and less than or equal to 77k?"
+36,Geopolitics,26099,"Will a new nuclear-armed state emerge before Sept 30, 2024?"
+37,Election outcome,26100,"Will Robert F. Kennedy Jr. suspend his 2024 presidential campaign before September 24, 2024?"
+38,Market price,26101,"Will TikTok US be sold to a US entity before Sept 30, 2024?"
+39,Astronomy,26102,Will astronauts Suni Williams and Butch Wilmore be on Earth on August 15?
+40,Leadership change,26133,"Will Benjamin Netanyahu remain Prime Minister of Israel through Sept 30, 2024?"
+41,Astronomy,26134,"Will SpaceX attempt to catch a Starship booster with the tower before Sept 30, 2024?"
+42,Market price,26138,"Will the Canadian Dollars to U.S. Dollar Spot Exchange Rate exceed 1.3600 on Friday September 20, 2024, according to FRED?"
+43,Sports performance,26139,Will Kalenjin athletes win both the men's and women's marathon races at the 2024 Paris Olympics?
+44,Geopolitics,26140,"Will the People's Republic of China control at least half of Taiwan before Sept 30, 2024?"
+45,Astronomy,26157,"Between July 17 and July 28, 2024, will the strongest geomagnetic storm have a K-index (""Kp"") greater than 5 and less than or equal to 6?"
+46,Astronomy,26158,"Between July 17 and July 28, 2024, will the strongest geomagnetic storm have a K-index (""Kp"") greater than 4 and less than or equal to 5?"
+47,Astronomy,26159,"Between July 17 and July 28, 2024, will the strongest geomagnetic storm have a K-index (""Kp"") greater than 4 and less than or equal to 6?"
+48,Sports performance,26189,Will a swimmer win the most gold medals at the 2024 Paris Olympics?
+49,State executive action,26190,"Will the UK Government ban any UK oil and gas licenses currently being processed by September 1, 2024?"
+50,Election outcome,26191,"Before August 22, 2024, will President Joe Biden take any of these specific actions to end his candidacy for re-election?"
+51,Leadership change,26192,"Will Kimberly Cheatle remain Director of the United States Secret Service through September 30, 2024?"
+52,Election outcome,26193,"Will there be a US presidential debate held on September 10, 2024?"
+53,Epidemic,26194,"On Sept 30, 2024 will more than 200 measles cases have been reported in the United States in 2024?"
+54,Epidemic,26195,"On Sept 30, 2024 will more than 300 measles cases have been reported in the United States in 2024?"
+55,Epidemic,26196,"On Sept 30, 2024 will more than 200 and less than or equal to 300 measles cases have been reported in the United States in 2024?"
+56,Military conflict,26210,"Will Israel invade Lebanon before October 1, 2024?"
+57,Sports performance,26211,Will the Olympic record for the men's pole vault be broken at the 2024 Paris Olympics?
+58,Epidemic,26212,"Will the extent of the H5N1 outbreak in dairy cows on Sept 30, 2024, exceed 200 herds?"
+59,Epidemic,26213,"Will the extent of the H5N1 outbreak in dairy cows on Sept 30, 2024, be less than 300 herds?"
+60,Epidemic,26214,"Will the extent of the H5N1 outbreak in dairy cows on Sept 30, 2024, be between 200 and 300 herds?"
+61,Military conflict,26215,"Will a nuclear weapon be detonated as an act of war by Sept 30, 2024?"
+62,Market price,26216,"Bitcoin Extremes: Will 1 bitcoin be worth $100,000 or more before Sept 15, 2024?"
+63,State executive action,26232,"Will the US government end its agreement directly allowing Verisign to manage the authoritative domain name registry for the .com TLD, before August 3, 2024?"
+64,Other,26233,"Will the domestic box office opening of ""Deadpool & Wolverine"" be higher than that of ""Deadpool"" and ""The Wolverine"" combined?"
+65,Epidemic,26234,"Will an avian influenza virus in humans be declared a “Public Health Emergency of International Concern” by the World Health Organization before Sept 30, 2024?"
+66,Macroeconomics,26235,"Will the Warren Buffett Indicator exceed 200% before September 17, 2024?"
+67,Sports performance,26236,Will at least 24 world records be broken at the 2024 Paris Olympics?
+68,Civil unrest,26302,"Will the US see a large-scale riot between July 17, 2024 and Sept 30, 2024?"
+69,AI performance,26303,"Will a major cyberattack, virus, worm, etc. that uses LLMs in some important way occur before Sept 30, 2024?"
+70,Leadership change,26304,"Will William Ruto cease to be President of Kenya before October 1, 2024?"
+71,Sports performance,26305,Will the same nation win more than one women's team sport at the 2024 Olympics?
+72,Market price,26306,"Will the 500th richest person on Bloomberg's Billionaires Index have $6 billion or more on Monday September 16, 2024?"
+73,Macroeconomics,26307,Will the US unemployment rate be above 4.1% in August 2024?
+74,Market price,26387,Will Tesla increase its deliveries in Q3 2024 compared with Q2 2024?
+75,Sports performance,26388,Will an athlete win more than one medal for tennis at the 2024 Paris Olympics?
+76,Macroeconomics,26389,"Will the Federal Reserve cut interest rates before September 30, 2024?"
+77,Market price,26390,"Will the bubble in the Magnificent Seven pop before September 30, 2024?"
+78,Military conflict,26391,"Will a Israel-Hamas conflict ceasefire lasting at least 30 days be agreed to before August 31, 2024?"
+79,AI performance,26392,"Will OpenAI announce GPT-5 before September 30, 2024?"
+80,State executive action,26404,"Will cannabis be removed from Schedule I of the Controlled Substance Act before September 30, 2024?"
+81,Weather prediction,26405,"Will at least 5 major hurricanes occur in the 2024 Atlantic hurricane season before Sept 30, 2024?"
+82,Epidemic,26406,"Will the maximum weekly rate of COVID-19 hospitalizations occurring in the United States between June 1 and August 31, 2024 exceed 3.5 per 100,000 people?"
+83,Military conflict,26407,"Will Russia start a second mobilization wave before September 30, 2024, according to the Institute for the Study of War?"
+84,Macroeconomics,26408,"Will the minimum wage in Türkiye (Turkey) increase again before September 30, 2024?"
+85,Astronomy,26550,Will SpaceX's Super Heavy booster make contact with the catch tower during the landing phase of Starship integrated flight test 5?
+86,Market price,26551,"Will Revolut obtain a UK banking license before September 30, 2024?"
+87,Drug discovery,26552,"Will a senolytic therapy be approved for commercial sale by the US FDA before September 30, 2024?"
+88,Macroeconomics,26553,"Will Hawaiian Electric Company file for bankruptcy before September 30, 2024?"
+89,Astronomy,26554,"Will the next interstellar object be discovered before September 30, 2024?"
+90,Sports performance,26555,Will the USA win more Gold than Silver medals at the Paris 2024 Olympics?
+91,Military conflict,26568,"Will Russia have control of Chasiv Yar on October 1, 2024?"
+92,Weather prediction,26569,"Will the Atlantic Ocean's daily mean sea surface temperature surpass 2023's record peak temperature before October 1, 2024?"
+93,Sports performance,26570,"Will Poland win the 2024 Warhammer 40,000 World Team Championship?"
+94,Sports performance,26571,"Will Germany win the 2024 Warhammer 40,000 World Team Championship?"
+95,Sports performance,26572,"Will USA, Sweden, England, or France win the 2024 Warhammer 40,000 World Team Championship?"
+96,Sports performance,26573,"Will a country other than Poland, Germany, USA, Sweden, England, or France win the 2024 Warhammer 40,000 World Team Championship?"
+97,Epidemic,26574,"Will the CDC report 11 total human cases of H5 in the United States on October 1, 2024?"
+98,Epidemic,26575,"Will the CDC report 12 to 20 total human cases of H5 in the United States on October 1, 2024?"
+99,Epidemic,26576,"Will the CDC report 21 to 100 total human cases of H5 in the United States on October 1, 2024?"
+100,Epidemic,26577,"Will the CDC report more than 100 total human cases of H5 in the United States on October 1, 2024?"
+101,State executive action,26638,"Before October 1, 2024, will a federal court rule in favor of a challenge to a major Clean Air Act provision, citing Chevron's overturning as a key factor?"
+102,Election outcome,26639,"Will Donald Trump debate the Democratic nominee for president more than once before October 1, 2024?"
+103,Election outcome,26640,"Will Donald Trump debate the Democratic nominee for president before October 1, 2024?"
+104,Election outcome,26641,"Will Donald Trump debate the Democratic nominee for president less than twice before October 1, 2024?"
+105,Other,26642,"Will the Spanish Wikipedia first exceed 2 million articles before October 1, 2024?"
+106,Other,26643,"Will the Spanish Wikipedia first exceed 2 million articles before Seotember 15, 2024?"
+107,Other,26644,"Will the Spanish Wikipedia first exceed 2 million articles betweeen September 15, 2024 and October 1, 2024?"
+108,Geopolitics,26645,"Will Saudi Arabia establish diplomatic relations with Israel before September 30, 2024?"
+109,Sports performance,26646,"At the Paris Summer Olympics in 2024, will the men's 100m dash winning time break the Olympic record of 9.63s?"
+110,Dated product announcement,26665,"Will Apple announce a portless iPhone before October 1, 2024?"
+111,Market price,26666,"Will Tether collapse before September 30, 2024?"
+112,Astronomy,26667,"Will Planet Nine be discovered before September 30, 2024?"
+113,Election outcome,26668,"On September 30, 2024, will JD Vance be the Republican nominee for vice president in the 2024 election?"
+114,Leadership change,26669,"Will the Prime Minister of France on August 31, 2024 belong to the France Unbowed (LFI) party?"
+115,Leadership change,26670,"Will the Prime Minister of France on August 31, 2024 belong to the New Popular Front but not LFI?"
+116,Leadership change,26671,"Will the Prime Minister of France on August 31, 2024 belong to Macron's ""Together"" coalition?"
+117,Sports performance,26683,"At the 2024 Olympics, will at least 5 countries win their debut gold medal?"
+118,Market price,26700,"Will the total market cap of all cryptocurrencies be more than $1.5 trillion on September 29, 2024?"
+119,Market price,26701,"Will the total market cap of all cryptocurrencies be more than $2 trillion on September 29, 2024?"
+120,Market price,26702,"Will the total market cap of all cryptocurrencies be more than $1.5 trillion and less than or equal to $2 trillion on September 29, 2024?"
+121,Military conflict,26703,"Will Venezuela invade Guyana before September 30, 2024?"
+122,Market price,26704,"Will the median person on Bloomberg's Billionaires Index come from the Energy industry on September 16, 2024?"
+123,Dated product announcement,26705,"Will Apple announce an iPhone with a graphene thermal system before October 1, 2024?"
+124,Dated product announcement,26706,"Before October 1, 2024, will Stripe announce on the news section of its website that it is planning an IPO?"
+125,Sports performance,26771,Will Fabiano Caruana win the 2024 Grand Chess Tour?
+126,Sports performance,26772,Will Alireza Firouzja win the 2024 Grand Chess Tour?
+127,Sports performance,26773,Will Praggnanandhaa Rameshbabu win the 2024 Grand Chess Tour?
+128,Sports performance,26774,Will Gukesh Dommaraju win the 2024 Grand Chess Tour?
+129,Sports performance,26775,"Will someone other than Fabiano Caruana, Alireza Firouzja, Praggnanandhaa Rameshbabu, or Gukesh Dommaraju win the 2024 Grand Chess Tour?"
+130,Weather prediction,26776,Will the Seattle-Tacoma-Bellevue WA metro area experience exactly 1 day with an Air Quality Index value above 150 in the 3rd quarter of 2024?
+131,Weather prediction,26777,Will the Seattle-Tacoma-Bellevue WA metro area experience 2 to 5 days with an Air Quality Index value above 150 in the 3rd quarter of 2024?
+132,Weather prediction,26778,Will the Seattle-Tacoma-Bellevue WA metro area experience 6 to 10 days with an Air Quality Index value above 150 in the 3rd quarter of 2024?
+133,Weather prediction,26779,Will the Seattle-Tacoma-Bellevue WA metro area experience 11 or more days with an Air Quality Index value above 150 in the 3rd quarter of 2024?
+134,Market price,26780,"Will Bitcoin reach a new all-time high before October 1, 2024?"
+135,Leadership change,26781,"Will William Ruto cease to be President of Kenya before October 1, 2024?"
+136,Election outcome,26816,"Before October 1, 2024, will Donald Trump and Kamala Harris shake hands in any of their debates, if any happen?"
+137,State executive action,26817,"Will the UK Abolish the Two-Child Benefit Cap before October 1, 2024?"
+138,AI Performance,26818,"Will Donald Trump have more than 15 million TikTok followers on Sept 30, 2024?"
+139,AI Performance,26819,"Will Kamala Harris have more than 15 million TikTok followers on Sept 30, 2024?"
+140,AI Performance,26820,"Will Robert F. Kennedy Jr. have more than 15 million TikTok followers on Sept 30, 2024?"
+141,Election outcome,26821,"Will there be a debate between the Republican vice presidential nominee and the Democratic vice presidential nominee before October 1, 2024?"
+142,Other,26837,"Will ""Woman's World"" by Katy Perry achieve a ranking higher than 15th on the Billboard Hot 100 before October 1, 2024?"
+143,Market price,26838,"Will the median net worth on Bloomberg's Billionaires Index be above $10.2 billion on September 16, 2024?"
+144,Dated product announcement,26839,"Will Apple announce an iPhone with stacked battery technology before October 1, 2024?"
+145,Market price,26840,Will Tesla increase its production in Q3 2024 compared with Q2 2024?
+146,Market price,26841,"Will Spirit Airlines file for bankruptcy before October 1, 2024?"
+147,Dated product announcement,26842,"Before October 1, 2024, will OpenAI announce on the news section of its website that it is planning an IPO?"
+148,Election outcome,26844,"Will the opposition candidate, Edmundo González, concede the 2024 Venezuelan election to Maduro before September 2024?"
+149,Election outcome,26913,"Will Donald Trump's net favorability rating be higher than -8 as reported by 538 on September 1, 2024?"
+150,Election outcome,26914,"Will Donald Trump's net favorability rating be higher than -8 as reported by 538 on October 1, 2024?"
+151,Election outcome,26915,"Will Kamala Harris's net favorability rating be higher than -8 as reported by 538 on September 1, 2024?"
+152,Election outcome,26916,"Will Kamala Harris's net favorability rating be higher than -8 as reported by 538 on October 1, 2024?"
+153,Military conflict,26917,"Will Israel invade Lebanon before October 1, 2024?"
+154,Military conflict,26918,"Will there be 1000 or more deaths due to armed conflict between Israel and Hezbollah before October 1, 2024?"
+155,Military conflict,26919,"If Israel invades Lebanon before October 1, 2024, will there be 1000 or more deaths due to armed conflict between Israel and Hezbollah before October 1, 2024?"
+156,Military conflict,26920,"If Israel does not invade Lebanon before October 1, 2024, will there be 1000 or more deaths due to armed conflict between Israel and Hezbollah before October 1, 2024?"
+157,Military conflict,26957,"Will Iran carry out a deadly attack within Israel before September 1, 2024?"
+158,State executive action,26958,"Will YouTube be banned in Russia before October 1, 2024?"
+159,Election outcome,26959,"Will a US Vice Presidential debate be held before October 1, 2024?"
+160,Macroeconomics,26975,"Will the US Federal Reserve make an emergency rate cut before September 17, 2024?"
+161,State executive action,26976,"Will California Senate Bill 1047, the ""Safe and Secure Innovation for Frontier Artificial Intelligence Models Act,"" be enacted before October 1, 2024?"
+162,Weather prediction,26977,"Will the Accumulated Cyclone Energy of the 2024 Atlantic hurricane season be greater than 60 on October 7, 2024?"
+163,Weather prediction,26978,"Will the Accumulated Cyclone Energy of the 2024 Atlantic hurricane season be greater than 80 on October 7, 2024?"
+164,Weather prediction,26979,"Will the Accumulated Cyclone Energy of the 2024 Atlantic hurricane season be greater than 100 on October 7, 2024?"
+165,Weather prediction,26980,"Will the Accumulated Cyclone Energy of the 2024 Atlantic hurricane season be greater than 120 on October 7, 2024?"
+166,Geopolitics,26981,"Will more than 10 Chinese aircraft violate Taiwan's air defense identification zone (ADIZ) in a single day between August 15 and September 15, 2024?"
+167,Geopolitics,26982,"Will more than 20 Chinese aircraft violate Taiwan's air defense identification zone (ADIZ) in a single day between August 15 and September 15, 2024?"
+168,Geopolitics,26983,"Will more than 30 Chinese aircraft violate Taiwan's air defense identification zone (ADIZ) in a single day between August 15 and September 15, 2024?"
+169,Geopolitics,26984,"Will more than 40 Chinese aircraft violate Taiwan's air defense identification zone (ADIZ) in a single day between August 15 and September 15, 2024?"
+170,Geopolitics,26985,"Will more than 50 Chinese aircraft violate Taiwan's air defense identification zone (ADIZ) in a single day between August 15 and September 15, 2024?"
+171,Geopolitics,26986,"Will more than 60 Chinese aircraft violate Taiwan's air defense identification zone (ADIZ) in a single day between August 15 and September 15, 2024?"
+172,Geopolitics,27017,"Will the United Nations have more than 193 member states before October 1, 2024?"
+173,AI performance,27018,"Will a publicly-available LLM achieve gold on the International Math Olympiad before October 1, 2024?"
+174,Election outcome,27019,"Will there be a debate between Kamala Harris and Donald Trump on September 4, 2024?"
+175,Dated product announcement,27020,"Before October 1, 2024, will Anthropic announce on the news section of its website that it is planning an IPO?"
+176,Sports performance,27021,Will the USA win more Gold than Silver medals at the Paris 2024 Olympics?
+177,Astronomy,27022,"Will astronauts Suni Williams and Butch Wilmore be on Earth on September 15, 2024?"
+178,Geopolitics,27039,"Will Sheikh Hasina get asylum in the United Kingdom before October 1, 2024?"
+179,Geopolitics,27085,"Before Sept 30, 2024, will the International Criminal Court issue an arrest warrant for Benjamin Netanyahu?"
+180,Market price,27086,"Will Elon Musk be the richest person in the world on September 30, 2024, according to Forbes?"
+181,Market price,27087,"Before October 1, 2024, will Tech Crunch report new layoffs at Microsoft?"
+182,Election outcome,27088,"Will Tim Walz cease to be Kamala Harriss's running mate before October 1, 2024?"
+183,Dated product announcement,27089,"Will any new iPhone model be announced supporting Wi-Fi 7 before October 1, 2024?"
+184,Military conflict,27132,"Will Iran carry out a deadly attack within Israel before October 1, 2024?"
+185,Election outcome,27133,"Will Donald Trump debate the Democratic nominee for president more than once before October 1, 2024?"
+186,Market price,27134,Will the S&P 500 index go up in September 2024?
+187,Market price,27135,"Before October 1, 2024, will Tech Crunch report new layoffs at Google or Alphabet?"
+188,Election outcome,27136,"Will Robert F. Kennedy Jr. suspend his 2024 presidential campaign before September 24, 2024?"
+189,Geopolitics,27137,"Will at least 200 Benin Bronzes go from the British Museum to Nigeria before October 1, 2024?"
+190,Market price,27138,"On September 17, 2024, will Nvidia's market capitalization be larger than Apple's?"
+191,Market price,27140,"Will the  CBOE S&P 500 3-Month Volatility Index (VXVCLS)        
+ be higher Year-over-Year on September 20, 2024?"
+192,Military conflict,27141,"Will the Crimean Bridge be hit with an attack before Sept 30, 2024?"
+193,Military conflict,27157,"Before October 1, 2024, will there be an armed forces death in a conflict opposing China to Taiwan, the United States, the Philippines, or Japan?"
+194,Election outcome,27158,Will Democrats have a brokered convention in 2024?
+195,Epidemic,27159,"Will there be any reported human-to-human transmission of highly pathogenic avian influenza H5N1 globally before Sept 30, 2024?"
+196,Geopolitics,27160,"Will diplomatic expulsions or recalls take place between the Philippines and China before September 30, 2024?"
+197,Sports performance,27161,Will Bo Nix be the starting quarterback for the Denver Broncos in their Week 4 game against the New York Jets?
+198,Epidemic,27200,"Will the CDC confirm a case of Clade I mpox in a US resident before August 23, 2024?"
+199,Military conflict,27219,"On October 1, 2024, will Ukraine’s offensives reaching at least five miles into Russian territory include Kursk Oblast and no other oblasts?"
+200,Military conflict,27220,"On October 1, 2024, will Ukraine’s offensives reaching at least five miles into Russian territory include Kursk Oblast and at least 1 other oblast?"
+201,Military conflict,27221,"On October 1, 2024, will Ukraine’s offensives reaching at least five miles into Russian territory not include Kursk Oblast, but include at least 1 other oblast?"
+202,Military conflict,27222,"On October 1, 2024, will Ukraine have no offensives reaching at least five miles into Russian territory?"
+203,Military conflict,27223,"Will Ukrainian forces capture Rylsk, Russia before October 1, 2024?"
+204,Market price,27238,"Will the USD be worth 0.935 EUR or more at the close of trading on any day before October 1, 2024?"
+205,Election outcome,27239,"Will Keir Starmer's approval rating as Prime Minister of the United Kingdom be less than 40 on September 18, 2024?"
+206,Election outcome,27240,"Will Keir Starmer's approval rating as Prime Minister of the United Kingdom be less than 50 on September 18, 2024?"
+207,Election outcome,27241,"Will Keir Starmer's approval rating as Prime Minister of the United Kingdom be less than 60 on September 18, 2024?"
+208,State executive action,27248,"Will the Secretary of the US Department of Health and Human Services declare a public health emergency for mpox (monkeypox) before October 1, 2024?"
+209,Epidemic,27249,"Will the 7-day average confirmed mpox cases in 2024 exceed the peak 7-day average confirmed mpox cases from the 2022-2023 outbreak by September 30, 2024?"
+210,Market price,27258,"Will Jeff Bezos be the 1st or 2nd richest person in the world on September 30, 2024, according to Forbes?"
+211,Market price,27259,"Before October 1, 2024, will Tech Crunch report new layoffs at Netflix?"
+212,Market price,27260,"Will Big Lots file for bankruptcy before September 30, 2024?"
+213,Astronomy,27261,"Between August 21 and Sept 11, 2024, will the strongest geomagnetic storm have a K-index (""Kp"") greater than 6 and less than or equal to 8?"
+214,Astronomy,27262,"Between August 21 and Sept 11, 2024, will the strongest geomagnetic storm have a K-index (""Kp"") greater than 7 and less than or equal to 8?"
+215,Astronomy,27263,"Between August 21 and Sept 11, 2024, will the strongest geomagnetic storm have a K-index (""Kp"") greater than 6 and less than or equal to 7?"
+216,Epidemic,27277,"On Sept 30, 2024 will more than 400 measles cases have been reported in the United States in 2024?"
+217,Epidemic,27278,"On Sept 30, 2024 will more than 300 measles cases have been reported in the United States in 2024?"
+218,Epidemic,27279,"On Sept 30, 2024 will more than 300 and less than or equal to 400 measles cases have been reported in the United States in 2024?"
+219,Military conflict,27280,"Will Israel invade Lebanon before October 1, 2024?"
+220,Macroeconomics,27281,"Will the Warren Buffett Indicator exceed 200% before September 17, 2024?"
+221,Civil unrest,27282,"Will the US see a large-scale riot between July 17, 2024 and Sept 30, 2024?"
+222,Market price,27283,"Before October 1, 2024, will Tech Crunch report new layoffs at Rivian?"
+223,"This question pertains to whether Kamala Harris will mention ""artificial intelligence"" or ""AI"" in her 2024 Democratic National Convention keynote speech. To categorize this, let's analyze the primary focus of the question:
+
+- It's about whether a specific phrase will be mentioned in a speech.
+- The subject matter involves Kamala Harris, the Democratic National Convention, and the content of the keynote speech.
+
+Given these elements, none of the categories provided perfectly match the focal point of the question, which is essentially centered on a specific event and the words spoken during that event. However, the closest fit among the available categories might be ""Other,"" as it doesn't strictly fit into any of the predefined domains such as ""Election outcome,"" ""State executive action,"" ""Geopolitics,"" etc.
+
+So, the domain for this question should be classified as:
+
+**Other**",27446,"Will Kamala Harris say ""artificial intelligence"" or ""AI"" in her 2024 Democratic National Convention keynote speech?"
+224,Election outcome,27447,"Will either of Donald Trump's campaign managers get fired, resign, or otherwise leave their positions before October 1, 2024?"
+225,Macroeconomics,27484,Will the Fed hold rates steady at their September meeting?
+226,Macroeconomics,27485,Will the Fed cut rates by 25 bps at their September meeting?
+227,Macroeconomics,27486,Will the Fed cut rates by 50 bps at their September meeting?
+228,Macroeconomics,27487,Will the Fed cut rates by more than 50 bps at their September meeting?
+229,Macroeconomics,27488,Will the month over month percentage increase in core CPI inflation in the US in August 2024 be 0.0% or less?
+230,Macroeconomics,27489,Will the month over month percentage increase in core CPI inflation in the US in August 2024 be 0.1%?
+231,Macroeconomics,27490,Will the month over month percentage increase in core CPI inflation in the US in August 2024 be 0.2%?
+232,Macroeconomics,27491,Will the month over month percentage increase in core CPI inflation in the US in August 2024 be 0.3%?
+233,Macroeconomics,27492,Will the month over month percentage increase in core CPI inflation in the US in August 2024 be 0.4%?
+234,Macroeconomics,27493,Will the month over month percentage increase in core CPI inflation in the US in August 2024 be 0.5% or more?
+235,"The model domain for this question is:
+
+Dated product announcement
+
+This question is specifically about whether Apple will announce a particular product feature (40W fast charging for an iPhone) by a specific date (the end of its September 2024 event). The question revolves around a planned product announcement event with a particular timeframe, which fits squarely into the ""Dated product announcement"" category.",27515,Will Apple announce an iPhone with 40W fast charging by the end of its September 2024 event?
+236,"The model domain for this question is:
+
+Dated product announcement
+
+This question is specifically about the release date of a product (Claude 3.5 Opus) from a company (Anthropic). It asks whether this product will be released before a specific date, which fits the ""Dated product announcement"" category best among the given options.",27521,"Will Claude 3.5 Opus be released before October 1, 2024?"
+237,"Based on the given information, this question falls under the domain of:
+
+Sports performance
+
+The question is specifically about a potential overturn of a decision regarding medal allocation in the women's floor exercise at the 2024 Paris Olympics. This clearly relates to an outcome in a sporting event and the subsequent administrative decisions that affect the final results, which is squarely within the realm of sports performance.",27522,"Will the decision to reallocate the bronze medal in the women's floor exercise at the 2024 Paris Olympics from the US to Romania be overturned before October 1, 2024?"
+238,"The model domain for this question is Leadership change. 
+
+The question asks about whether Yahya Sinwar will cease to be the acting Chairman of the Hamas Political Bureau, which is a leadership position. The criteria for resolution involve Sinwar stepping down, being replaced, captured, or dying - all of which would constitute a change in leadership for this organization. The background information provides context about Sinwar's recent appointment to this role and the history of leadership changes in this position.",27523,"Will Yahya Sinwar cease to be the acting Chairman of the Hamas Political Bureau before October 1, 2024?"
+239,"The model domain for this question is:
+
+Military conflict
+
+This question is clearly about an ongoing military situation involving Ukraine's incursion into Russia's Kursk Oblast and the potential for Ukraine to withdraw from that territory. It involves troop movements, territorial control, and the outcome of a military operation, which are all characteristic of the ""Military conflict"" domain.",27524,"Will Ukraine withdraw from Kursk before October 1, 2024?"
+240,"The model domain for this question is Military conflict.
+
+This question relates to the potential use of nuclear weapons by Russia in the ongoing conflict with Ukraine, which falls squarely within the domain of military conflict. The question specifically asks about the detonation of a nuclear weapon in a war zone, which is a military action with severe geopolitical implications.
+
+While the question touches on aspects of geopolitics, the core focus is on a specific military action (nuclear weapon detonation) in the context of an ongoing armed conflict. Therefore, Military conflict is the most appropriate domain for this question.",27538,"Will Russia detonate a nuclear weapon in Ukraine or Ukrainian-held territory before October 1, 2024?"
+241,"The model domain for this question is:
+
+Military conflict
+
+This question is specifically about the potential use or accidental detonation of nuclear weapons outside of testing environments, which falls squarely within the domain of military conflict. While it touches on aspects of geopolitics and potentially terrorism, the core focus is on the use of nuclear weapons in a conflict scenario or through military accident, making ""Military conflict"" the most appropriate category.",27539,"Will a non-test nuclear weapon be detonated by October 1, 2024?"
+242,"This question falls under the domain of ""Epidemic"". 
+
+The key reasons for this classification are:
+
+1. The question is specifically about mpox (monkeypox), which is an infectious disease that can potentially reach epidemic proportions.
+
+2. It involves the CDC's risk assessment of mpox for the general US population, which is a typical measure used to monitor and evaluate the spread and impact of infectious diseases.
+
+3. The background information provides details about CDC's qualitative risk assessments for infectious diseases, including definitions for likelihood of infection and impact of infection, which are central to epidemic monitoring and management.
+
+4. The question is time-bound and asks about a potential change in risk level, which is characteristic of epidemic-related forecasts.
+
+While this question touches on aspects of public health policy (given the CDC's involvement), the core focus is on the spread and risk assessment of an infectious disease, making ""Epidemic"" the most appropriate classification.",27545,"Will the CDC's assessment of the risk posed by mpox to the US general public exceed ""Very Low"" before October 1, 2024?"
+243,"The model domain for this question is Epidemic. 
+
+The question is specifically about the CDC's risk assessment for mpox (formerly known as monkeypox), which is an infectious disease. The question focuses on how the CDC will evaluate the epidemic risk of mpox to the general U.S. population over a specific time period, which squarely places this in the domain of epidemic assessment and monitoring.",27546,"Will the CDC's assessment of the risk posed by mpox to the US general public exceed ""Low"" before October 1, 2024?"
+244,"This question falls under the domain of Disease. 
+
+The question is specifically about the CDC's risk assessment for mpox (formerly known as monkeypox) in the United States. It asks whether the CDC will elevate its risk assessment for the general U.S. population above ""Moderate"" before a specific date. 
+
+This clearly relates to the spread and impact of an infectious disease, which is tracked and assessed by public health authorities. The focus on CDC risk assessments, disease prevalence, and potential impact on the population all point to this being a question about disease monitoring and public health risk evaluation.",27547,"Will the CDC's assessment of the risk posed by mpox to the US general public exceed ""Moderate"" before October 1, 2024?"
+245,"This question falls under the domain of Epidemic. The question is specifically about the CDC's risk assessment for mpox (monkeypox) in the United States, which is a matter of epidemic monitoring and evaluation. The question asks about potential changes in the risk level assessed by the CDC for this infectious disease outbreak, which is a classic example of epidemic-related forecasting and risk assessment.",27548,"Will the CDC's assessment of the risk posed by mpox to the US general public exceed ""High"" before October 1, 2024?"
+246,"Based on the question details provided, this event falls under the domain of:
+
+Geopolitics
+
+The question concerns potential diplomatic actions by major Western countries towards Israel in response to its military actions in Gaza. This involves international relations, diplomatic ties, and responses to military conflicts, which are all key aspects of geopolitics.",27576,"Will any two countries out of the US, UK, Germany, Canada, France, or Australia curtail diplomatic ties with Israel before 2025, citing Israel’s military actions in Gaza?"
+247,"The model domain for this question is Leadership change. 
+
+The question is specifically about whether Greg Brockman, a key figure at OpenAI, will return to his position at the company after a leave of absence. This directly relates to potential changes in leadership within a prominent organization, which fits squarely into the ""Leadership change"" category.",27581,"Will Greg Brockman return to OpenAI following his leave of absence before October 1, 2024?"
+248,"This question falls under the domain of ""Disease"". The question is specifically about confirming infections of a particular clade (Clade I) of the mpox virus in the United States before a certain date. It involves tracking the spread of a specific disease variant, which is a typical concern in epidemiology and disease surveillance. The background information provides context about the global situation of mpox, including its declaration as a public health emergency and the emergence of new clades, further emphasizing the disease-related nature of the question.",27582,"Will the US confirm Clade I mpox infections before October 1, 2024?"
+249,"The model domain for this question is: Disease
+
+This question is clearly about the potential spread of a specific disease (mpox, specifically Clade I) to a particular country (Zambia). The background information provides context about recent outbreaks and the declaration of mpox as a public health emergency by the WHO. The question is focused on whether a particular strain of a disease will be confirmed in a specific geographic location within a given timeframe, which fits squarely within the ""Disease"" domain.",27583,"Will Zambia confirm Clade I mpox infections before October 1, 2024?"
+250,"The model domain for this question is:
+
+Epidemic
+
+This question is clearly about the potential spread of a specific strain of an infectious disease (Clade I mpox) to a new geographic area (Angola). It deals with the confirmation of infections within a given timeframe, which is characteristic of epidemic-related forecasting questions.",27584,"Will Angola confirm Clade I mpox infections before October 1, 2024?"
+251,"The model domain for this question is Disease.
+
+This question is specifically about the potential spread of a particular strain (Clade I) of the mpox virus to Russia. It involves:
+
+1. A specific disease (mpox)
+2. A particular strain or clade of that disease (Clade I)
+3. The potential spread of that disease to a new geographic area (Russia)
+4. A timeframe for potential detection and confirmation of the disease
+
+The background information provided discusses the recent outbreak of this strain, its spread to new countries, and the declaration of a public health emergency by the WHO. All of these factors clearly place this question in the Disease domain, as it's directly related to the spread and detection of a specific infectious disease.",27602,"Will Russia confirm Clade I mpox infections before October 1, 2024?"
+252,"Based on the information provided, this question falls under the domain of:
+
+Disease
+
+The question is specifically about the potential confirmation of a particular strain (Clade I) of mpox infections in Japan. It involves the spread of a disease, international health concerns, and the tracking of a specific viral clade across different countries. The background information discusses the World Health Organization's declaration of mpox as a public health emergency and the emergence of a new clade, which are all characteristic of disease-related topics.",27603,"Will Japan confirm Clade I mpox infections before October 1, 2024?"
+253,"The model domain for this question is:
+
+Epidemic
+
+This question is clearly about the potential spread of a specific strain (Clade I) of the mpox virus to a new geographic location (Mexico). It deals with the confirmation of infections, which is a key aspect of tracking and managing epidemics. The background information provided discusses the declaration of mpox as a public health emergency of international concern by the WHO, the emergence of a new clade, and its spread to new countries, all of which are characteristic of epidemic-related topics.",27604,"Will Mexico confirm Clade I mpox infections before October 1, 2024?"
+254,"The model domain for this question is:
+
+Dated product announcement
+
+This question is about the release date of a specific book, ""The Winds of Winter"" by George R. R. Martin, before a particular date. Questions about the release of products, including books, on or by a certain date fall under the ""Dated product announcement"" category.",27605,"Will George R. R. Martin's “The Winds of Winter” be released before October 1, 2024?"
+255,"Based on the information provided, this question falls under the domain of:
+
+Military conflict
+
+The question is specifically about Ukrainian forces potentially capturing a location (Tetkino) in the context of the ongoing military conflict between Ukraine and Russia. The criteria, background, and fine print all relate to military advances, territorial control, and the use of a war map from the Institute for the Study of War to determine the outcome.",27606,"Will Ukrainian forces capture Tetkino (51°16'45.1""N 34°16'57.7""E) before October 1, 2024?"
+256,"Based on the given question and context, this event falls under the domain of:
+
+Military conflict
+
+The question is specifically about Ukrainian forces potentially capturing a location (Korenevo) in the context of the ongoing military conflict between Ukraine and Russia. The background information provided details recent military activities and advances in the area, including mentions of troop movements, territorial control, and combat operations. This clearly places the event within the realm of military conflict.",27607,"Will Ukrainian forces capture Korenevo (51°24'37.7""N 34°54'02.2""E) before October 1, 2024?"
+257,"The model domain for this question is:
+
+Military conflict
+
+This question is clearly about the ongoing military conflict between Ukraine and Russia, specifically focusing on potential territorial gains by Ukrainian forces in a specific location (Glushkovo) within a set timeframe. The question relies on military intelligence and mapping from the Institute for the Study of War, which further reinforces its classification as a military conflict domain question.",27608,"Will Ukrainian forces capture Glushkovo (51°20'43.9""N 34°38'54.9""E) before October 1, 2024?"
+258,"Based on the provided information, this question falls under the domain of:
+
+Military conflict
+
+The question is about Ukrainian forces potentially capturing a specific location (B. Soldatskoe) in the context of the ongoing military conflict between Ukraine and Russia. It involves tracking territorial control changes in a war zone using reports from the Institute for the Study of War, which is a clear indicator of a military conflict scenario.",27609,"Will Ukrainian forces capture B. Soldatskoe (51°20'15.4""N 35°30'27.1""E) before October 1, 2024?"
+259,"Based on the information provided, this question falls under the domain of:
+
+Military conflict
+
+The question is specifically about Ukrainian forces potentially capturing a nuclear plant in Russia during an ongoing military conflict. It involves territorial control and military advances, which are key aspects of military conflicts. The background information provided also discusses military operations, troop movements, and strategic locations in the context of the conflict between Ukraine and Russia.",27610,"Will Ukrainian forces capture Kursk Nuclear Plant 51°40'30.1""N 35°36'11.5""E before October 1, 2024?"

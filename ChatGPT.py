@@ -1,5 +1,6 @@
 from config import config
 from LLM import LLM
+from openai import OpenAI
 
 class ChatGPT(LLM):
     def __init__(self, system_role):
