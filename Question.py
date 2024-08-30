@@ -12,4 +12,6 @@ class Question(db.Entity):
     background = Optional(str)
     fine_print = Optional(str)
     resolution_criteria = Required(str)
+    model_domain = Optional(str)
+    event = Optional(str)
     json = Required(Json)
