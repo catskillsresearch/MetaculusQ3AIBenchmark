@@ -6,10 +6,12 @@ class ModelDomainClassifier(Agent):
 A question about an event is formatted as |id|question|criteria|background|fineprint|.
 You will report the model domain of the question, one of
 
+Aerospace technology
 Rate over time
 Weather prediction
 State executive action
 Election outcome
+Entertainment
 Geopolitics
 Sports performance
 Military conflict
@@ -27,6 +29,8 @@ AI performance
 Astronomy
 Astrophysics
 Other
+
+The report should consist of the model domain as listed above ONLY, with no additional text or delimiters.
 """
         super().__init__(self.system_role, llm)
 
@@ -39,7 +43,7 @@ Other
         return self.R
 
 if __name__=="__main__":
-    from MetaAI import MetaAI
-    mdc = ModelDomainClassifier(MetaAI)
+    from MetacGPT import MetacGPT
+    mdc = ModelDomainClassifier(MetacGPT)
     for ifp in ifps.values():
         mdc.classify(ifp)
