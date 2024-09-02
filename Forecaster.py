@@ -58,18 +58,21 @@ class Forecaster:
             self.sf.forecast(event, self.news[event], self.rates[event], group)
             critic = Critic(self.gpt)
             for ifp in group:
-                print("REFINING", ifp.id)
-                for i in range(self.max_tries):
-                    print("Pass", i, "of", self.max_tries, "on", ifp.id)
-                    if 'concur' in ifp.feedback:
-                        print("concur 1")
-                        break
-                    critic.feedback(ifp)
-                    if 'concur' in ifp.feedback:
-                        print("concur 2")
-                        break
-                    self.sf.reassess(ifp)
-                print("===============================================")   
+                try:
+                    ifp.forecast
+                except:
+                    print("REFINING", ifp.id)
+                    for i in range(self.max_tries):
+                        print("Pass", i, "of", self.max_tries, "on", ifp.id)
+                        if 'concur' in ifp.feedback:
+                            print("concur 1")
+                            break
+                        critic.feedback(ifp)
+                        if 'concur' in ifp.feedback:
+                            print("concur 2")
+                            break
+                        self.sf.reassess(ifp)
+                    print("===============================================")   
 
     def report(self):
         for ifp in self.ifps.values():
