@@ -10,6 +10,10 @@ Aerospace technology
 Rate over time
 Weather prediction
 State executive action
+Corporate action
+Stock price
+Rate change
+Market cap
 Election outcome
 Entertainment
 Geopolitics
