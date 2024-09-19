@@ -6,8 +6,11 @@ from asknews_sdk import AskNewsSDK
 import json, datetime
 from IFP import IFP
 
+def ifp_filename(ifp):
+    return f'asknews_for_question/{ifp.id}.json'
+    
 def save_news(ifp, news):
-    fn = f'asknews_for_question/{ifp.id}.json'
+    fn = ifp_filename(ifp)
     with open(fn, 'w') as f:
         json.dump(news, f)
         print('saved', fn)
@@ -69,6 +72,12 @@ class AskNews():
         if end_timestamp is None:
             now = datetime.datetime.now().timestamp()
             end_timestamp=int(now)       
+        """for ifp in group:
+            fn = ifp_filename(ifp)
+            if os.path.exists(fn):
+                with open(fn, 'r') as f:
+                    cached = json.load(f)
+                    return cached"""
         q = '\n'.join(ifp.title.strip() for ifp in group)
         print("Researching", q)
         try:
